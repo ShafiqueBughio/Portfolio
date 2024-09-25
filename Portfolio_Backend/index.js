@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin:["https://portfoliofrontend-azure.vercel.app/"],
+    origin:["https://portfoliofrontend-azure.vercel.app"],
     methods:["POST","GET"],
     credentials:true,
   }
