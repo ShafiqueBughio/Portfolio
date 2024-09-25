@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 async function Handle_Form_Submission(req, res) {
     try {
         const { name, email, subject, phone, message } = req.body;
-
+        console.log(req.body);
         // Save user data to the database
         const user = await Portfolio_Model.create({
             name,
