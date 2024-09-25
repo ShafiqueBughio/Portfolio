@@ -11,16 +11,17 @@ const app = express();
 
 app.use(cors(
   {
-    origin:["https://portfoliofrontend-azure.vercel.app"],
-    methods:["POST","GET"],
+    origin:["https://portfoliofrontend-azure.vercel.app",
+   
+    ],
+    methods: ["POST", "GET", "OPTIONS"],
     credentials:true,
   }
 ));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Serve static files (like HTML, CSS, JS)
-app.use(express.static('public'));
+
 
 Connect_MongoDB("mongodb+srv://shafique63005:pass%40portfolio@cluster1.ez7pc.mongodb.net/");
 

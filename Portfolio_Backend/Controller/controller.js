@@ -1,5 +1,6 @@
 const { Portfolio_Model } = require("../Model/Hiring_Db");
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 // Handler
 async function Handle_Form_Submission(req, res) {
@@ -19,8 +20,8 @@ async function Handle_Form_Submission(req, res) {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'shafiquebughio153@gmail.com',
-                pass: 'fcjs tdbj pgpf bgoy', // Use app-specific password
+                user:  process.env.EMAIL,
+                pass: process.env.EMAIL_PASSWORD, // Use app-specific password
             },
         });
 
