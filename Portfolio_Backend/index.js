@@ -14,7 +14,7 @@ const app = express();
 //     origin:["https://portfoliofrontend-azure.vercel.app",
    
 //     ],
-//     methods: ["POST", "GET", "OPTIONS"],
+//     methods: ["POST", "GET"],
 //     credentials:true,
 //   }
 // ));
