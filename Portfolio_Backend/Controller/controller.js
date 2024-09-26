@@ -55,4 +55,8 @@ async function Handle_Form_Submission(req, res) {
     }
 }
 
-module.exports = { Handle_Form_Submission };
+async function Handle_Get_Request(req,res){
+    res.send("Yes i am shafique");
+}
+
+module.exports = { Handle_Form_Submission,Handle_Get_Request };
