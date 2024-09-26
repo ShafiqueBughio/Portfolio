@@ -20,15 +20,15 @@ async function Handle_Form_Submission(req, res) {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user:  process.env.EMAIL,
-                pass: process.env.EMAIL_PASSWORD, // Use app-specific password
+                user:  process.env.EMAIL||"shafiquebughio153@gmail.com",
+                pass: process.env.EMAIL_PASSWORD||"fcjs tdbj pgpf bgoy", // Use app-specific password
             },
         });
 
         // Set up email data
         const mailOptions = {
             from: email, // Sender address (user's email)
-            to: 'shafiquebughio153@gmail.com', // Receiver address (your email)
+            to: process.env.EMAIL||'shafiquebughio153@gmail.com', // Receiver address (your email)
             subject: `New Contact Request from ${name}`,
             text: message,
             html: `<p><strong>Name:</strong> ${name}</p>
