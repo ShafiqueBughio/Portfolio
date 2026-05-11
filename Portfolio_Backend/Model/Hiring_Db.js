@@ -7,7 +7,7 @@ const Hiring_Db_Schema = new mongoose.Schema({
     phone:{type:String},
     subject:{type:String},
     message:{type:String},
-},{timestamp:true})
+},{timestamps:true})
 
 //model
 const Portfolio_Model = mongoose.model("portfolio",Hiring_Db_Schema);
