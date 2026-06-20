@@ -9,12 +9,13 @@ import serviceHub from "../assets/Service Hub Logo.png";
 
 const projects = [
   { img: serviceHub, link: 'https://github.com/ShafiqueBughio/Service-Hub', alt: 'Service Hub' },
+   { img: car_price_predictor, link: 'https://car-predict-pros.vercel.app/', alt: 'Car Price Prediction' },
   { img: logoImg, link: null, alt: 'Ecommerce Website' },
   { img: pageIconImg, link: 'https://edu-university-official.netlify.app/', alt: 'University Website' },
   { img: calculatorImg, link: 'https://shafique-calculator.netlify.app/', alt: 'Calculator' },
   { img: weatherImg, link: 'https://weatherwhiz-iota.vercel.app/', alt: 'Weather App' },
   { img: ticTacToeImg, link: 'https://weatherwhiz-rzj5.vercel.app/', alt: 'Tic Tac Toe' },
-  { img: car_price_predictor, link: 'https://github.com/ShafiqueBughio/Car-Price-Prediction', alt: 'Car Price Prediction' },
+ ,
 ];
 
 const Projects = () => {
